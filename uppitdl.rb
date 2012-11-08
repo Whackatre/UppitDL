@@ -1,9 +1,9 @@
-#!/usr/bin/env ruby
-#
 # Uppit Direct Downloader (UppitDL)
 # Author: Mew
 # Date: November 8, 2012
 #
+# To see usage instructions, please
+# refer to the README (README.md).
 
 require "net/http"
 require "uri"
@@ -40,7 +40,7 @@ http = Net::HTTP.new(uri.host, uri.port)
 response = http.request(Net::HTTP::Get.new(uri.request_uri))
 form = {"method_free" => "btn_download"}
 
-# Parse the page and push values into the form hash
+# Parse the page and push values into the form hash.
 response.body.each do |line|
 	m = /<input type="hidden" name="(.*)" value="(.*)">/.match(line)
 	form[m[1]] = m[2] if m
@@ -63,7 +63,7 @@ if link != nil
 		`wget #{link}`
 	end
 else
-	puts "Failed to find download!\nTry updating at 'https://github.com/whackatre/uppitdl'!"
+	puts "Failed to find download!\nTry updating at 'https://github.com/Whackatre/UppitDL'!"
 	puts "Debug:"
 	puts url
 	form.each do |k, v|
