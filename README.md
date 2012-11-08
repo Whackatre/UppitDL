@@ -1,7 +1,9 @@
 UppitDL
 =======
 
-Finds the direct download link on an Uppit download page and (optionally) downloads that specified file.
+This short snippet essentially finds the direct download link on a regular Uppit download page and (optionally) downloads that specified file. In short, it basically allows an individual to find the direct URL so he or she can download that file without having to access a browser and then waiting five or so seconds before downloading it. Due to the fact that it is very easy for the Uppit administrators to eradicate this program's Regex parsing, it is not recommended to rely on this program at all.
+
+Note: The generated link for the direct download is probably not permanent (Uppit probably changes this on a routine basis); however, I am not completely sure that my hypothesis is correct.
 
 
 Usage
