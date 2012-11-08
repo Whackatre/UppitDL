@@ -7,16 +7,15 @@ Finds the direct download link on an Uppit download page and (optionally) downlo
 Usage
 -----
 
-This program currently works on Linux and Mac OS X. You can either use:
-	chmod +x ./uppitdl
-	./uppitdl <uppit_link>
-Or:
-	ruby uppitdl.rb <uppit_link>
+This program currently works on Linux and Mac OS X.
+
+To use:
+    ruby uppitdl.rb <uppit_link>
 
 Use the argument -n (at the end) to not download the file (and only return the URL).
 
 
-Todo
+TODO
 ----
 
  - Improve program functionality.
